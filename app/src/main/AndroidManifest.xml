@@ -5,12 +5,12 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
             android:name="com.example.tk.coolweather.activity.ChooseAreaActivity"
-            android:label="@string/title_activity_choose_area"
+            android:label="Weather"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -18,6 +18,10 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.tk.coolweather.activity.WeatherActivity"/>
+
+        <service android:name="com.example.tk.coolweather.service.AutoUpdateService"></service>
+
+        <receiver android:name="com.example.tk.coolweather.receiver.AutoUpdateReceiver"></receiver>
     </application>
 
 </manifest>
