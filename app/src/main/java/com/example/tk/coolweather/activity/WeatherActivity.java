@@ -102,7 +102,7 @@ public class WeatherActivity extends Activity implements View.OnClickListener {
     }
 
     private void queryWeatherInfo(String weatherCode){
-        String address = "htpp://www.weather.com.cn/data/cityinfo/" + weatherCode + ".html";
+        String address = "http://www.weather.com.cn/data/cityinfo/" + weatherCode + ".html";
         queryFormServer(address,"weatherCode");
     }
 
